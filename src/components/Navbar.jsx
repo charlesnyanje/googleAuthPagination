@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 function Navbar() {
   return (
     <div className="navbar">
-        <Link to ='/' className='btn'>Home</Link>
+        <Link to ='/Dashboard' className='btn'>Home</Link>
         <Link to ='/Users' className='btn'>Users</Link>
         <Link to ='/About' className ="btn">About</Link>
     
@@ -13,3 +13,4 @@ function Navbar() {
 }
 
 export default Navbar
+

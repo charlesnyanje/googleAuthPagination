@@ -3,11 +3,12 @@ import ReactPaginate from "react-paginate";
 import { Link } from 'react-router-dom'
 import { FaUser, FaCalendarTimes, FaMap, FaLock, FaPhone, FaEnvelopeOpen } from 'react-icons/fa'
 
+
 const Users = () => {
   
   const [loading, setLoading] = useState(false);
   const [users, setUsers] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
+  //const [currentPage, setCurrentPage] = useState(1);
   
   const [pageNumber, setPageNumber] = useState(0)
   const usersPerPage = 1
@@ -21,7 +22,7 @@ const Users = () => {
         < div className="App">
 
           <div className="navbar">
-            <Link to='/' className='btn'>Home</Link>
+            <Link to='/Dashboard' className='btn'>Home</Link>
 
             <Link to='/About' className="btn">About</Link>
 
@@ -103,6 +104,8 @@ const Users = () => {
   }, []);
 
 
+ 
+ 
 
 
   const pageCount = Math.ceil(users.length / usersPerPage)
@@ -121,6 +124,7 @@ const Users = () => {
 
       
         previousLabel={"PREV"}
+        
 
         nextLabel={"NEXT"}
         
@@ -129,11 +133,11 @@ const Users = () => {
         containerClassName={"paginationBtns"}
         previousLinkClassName={'previousBtn'}
         nextLinkClassName={'nextBtn'}
-        
         disabledClassName={'paginationDisabled'}
         activeClassName={'paginationActive'}
         
       />
+
 
     </div>
   );
