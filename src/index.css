@@ -172,17 +172,15 @@ code {
   height: 40px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-
   position: absolute;
-
-  top: 530px;
+  gap: 8px;
+  padding-top: 30px;
 }
 
 .paginationBtns a {
   padding: 10px;
-  margin: 8px;
   border-radius: 5px;
   border: 1px solid steelblue;
   color: steelblue;
